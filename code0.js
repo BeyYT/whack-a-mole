@@ -7,6 +7,8 @@ gdjs.mainCode.GDNewObject2Objects1= [];
 gdjs.mainCode.GDNewObject2Objects2= [];
 gdjs.mainCode.GDNewObject3Objects1= [];
 gdjs.mainCode.GDNewObject3Objects2= [];
+gdjs.mainCode.GDNewObjec5Objects1= [];
+gdjs.mainCode.GDNewObjec5Objects2= [];
 gdjs.mainCode.GDNewObject4Objects1= [];
 gdjs.mainCode.GDNewObject4Objects2= [];
 
@@ -17,7 +19,7 @@ gdjs.mainCode.condition2IsTrue_0 = {val:false};
 gdjs.mainCode.condition3IsTrue_0 = {val:false};
 
 
-gdjs.mainCode.mapOfGDgdjs_46mainCode_46GDNewObject4Objects1Objects = Hashtable.newFrom({"NewObject4": gdjs.mainCode.GDNewObject4Objects1});gdjs.mainCode.eventsList0 = function(runtimeScene) {
+gdjs.mainCode.mapOfGDgdjs_46mainCode_46GDNewObject4Objects1Objects = Hashtable.newFrom({"NewObject4": gdjs.mainCode.GDNewObject4Objects1});gdjs.mainCode.mapOfGDgdjs_46mainCode_46GDNewObjec5Objects1Objects = Hashtable.newFrom({"NewObjec5": gdjs.mainCode.GDNewObjec5Objects1});gdjs.mainCode.eventsList0 = function(runtimeScene) {
 
 {
 
@@ -81,6 +83,25 @@ gdjs.copyArray(runtimeScene.getObjects("NewObject3"), gdjs.mainCode.GDNewObject3
 
 {
 
+gdjs.copyArray(runtimeScene.getObjects("NewObjec5"), gdjs.mainCode.GDNewObjec5Objects1);
+
+gdjs.mainCode.condition0IsTrue_0.val = false;
+gdjs.mainCode.condition1IsTrue_0.val = false;
+{
+gdjs.mainCode.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.mainCode.mapOfGDgdjs_46mainCode_46GDNewObjec5Objects1Objects, runtimeScene, true, false);
+}if ( gdjs.mainCode.condition0IsTrue_0.val ) {
+{
+gdjs.mainCode.condition1IsTrue_0.val = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
+}}
+if (gdjs.mainCode.condition1IsTrue_0.val) {
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "vs", false);
+}}
+
+}
+
+
+{
+
 gdjs.copyArray(runtimeScene.getObjects("NewObject3"), gdjs.mainCode.GDNewObject3Objects1);
 gdjs.copyArray(runtimeScene.getObjects("NewObject4"), gdjs.mainCode.GDNewObject4Objects1);
 
@@ -110,7 +131,7 @@ gdjs.mainCode.condition2IsTrue_0.val = !(gdjs.evtTools.runtimeScene.sceneJustBeg
 }}
 }
 if (gdjs.mainCode.condition2IsTrue_0.val) {
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "whacK  a amcoxce", false);
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "game", false);
 }}
 
 }
@@ -129,6 +150,8 @@ gdjs.mainCode.GDNewObject2Objects1.length = 0;
 gdjs.mainCode.GDNewObject2Objects2.length = 0;
 gdjs.mainCode.GDNewObject3Objects1.length = 0;
 gdjs.mainCode.GDNewObject3Objects2.length = 0;
+gdjs.mainCode.GDNewObjec5Objects1.length = 0;
+gdjs.mainCode.GDNewObjec5Objects2.length = 0;
 gdjs.mainCode.GDNewObject4Objects1.length = 0;
 gdjs.mainCode.GDNewObject4Objects2.length = 0;
 
